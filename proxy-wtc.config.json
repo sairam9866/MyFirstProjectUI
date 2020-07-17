@@ -1,0 +1,26 @@
+{
+  "/ziptodest/assets/time-zone.json": {
+    "target": "http://localhost:4200",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/ziptodest/assets/time-zone.json": "/assets/time-zone.json"
+    }
+  },
+  "/ziptodest/assets/user-guide.json": {
+    "target": "http://localhost:4200",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/ziptodest/assets/user-guide.json": "/assets/user-guide.json"
+    }
+  },
+  "/ziptodest/*": {
+    "target": "http://ziptodest-ui-release.app.wtcdev1.paas.fedex.com",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
